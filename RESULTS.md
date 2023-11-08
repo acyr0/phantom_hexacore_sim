@@ -199,7 +199,7 @@ Cost: 624      FD Gain: 63.42%    mFD/cost:  29.16%    Origin: 30    Mastery: 30
 Cost: 720      FD Gain: 65.54%    mFD/cost:  21.87%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 30    Rift Break: 30
 ```
 
-### based hard seren p2 ft. bishop + kanna
+### based on hard seren p2 ft. bishop + kanna
 ```
 Cost: 0        FD Gain: 22.95%    mFD/cost:            Origin: 1     Mastery: 0     LotD: 0     Ace: 0     Mark: 0     Rift Break: 0
 Cost: 4        FD Gain: 26.24%    mFD/cost: 812.30%    Origin: 1     Mastery: 0     LotD: 1     Ace: 0     Mark: 0     Rift Break: 0
