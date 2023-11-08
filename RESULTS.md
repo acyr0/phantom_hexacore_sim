@@ -7,6 +7,16 @@ on which scenario best fits the content you want to complete after New Age.
 You can also run the code in this repo yourself, if you want to customize the
 results given.
 
+## assumptions
+
+  - -4 hat
+  - Ring of Restraint 4
+  - 250 Mercedes Legion
+  - 300 PDR
+  - 88% attack
+  - 97.74% sheet IED
+  - 750 damage + boss (dummy ba) 900 damage + boss (hseren bishop + kanna)
+
 ### dummy ba
 [![dummy ba, page 1](img/thumb/dummy_ba_1.png)](img/dummy_ba_1.png)
 [![dummy ba, page 2](img/thumb/dummy_ba_2.png)](img/dummy_ba_2.png)
