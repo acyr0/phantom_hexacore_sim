@@ -58,9 +58,9 @@ fn display(cur: HexacoreSpec, last: HexacoreSpec) {
                 HexacoreSkill::PhantomsMark => "Phantom's Mark",
                 HexacoreSkill::RiftBreak => "Rift Break",
             };
-            let start = last.0[changed];
+            let start = last.0[changed] + 1;
             let end = cur.0[changed];
-            let level_diff = if end - start == 1 {
+            let level_diff = if end == start {
                 end.to_string()
             } else {
                 format!("{start}-{end}")
