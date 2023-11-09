@@ -10,8 +10,11 @@ use crate::constants::BREAKPOINTS;
 use crate::types::{HexacoreSkill, HexacoreSpec};
 
 /// FD is multiplicative, so we use the nth root to calculate a per-cost amount.
-fn fd_per_cost(fd_diff: f64, cost_diff: f64) -> f64 {
-    f64::powf(1.0 + fd_diff, 1.0 / cost_diff) - 1.0
+fn fd_per_cost(new_fd_increase: f64, old_fd_increase: f64, new_cost: u16, old_cost: u16) -> f64 {
+    f64::powf(
+        (1.0 + new_fd_increase) / (1.0 + old_fd_increase),
+        1.0 / (new_cost - old_cost) as f64,
+    ) - 1.0
 }
 
 fn differing_skills(a: HexacoreSpec, b: HexacoreSpec) -> Vec<HexacoreSkill> {
@@ -39,7 +42,7 @@ fn display(cur: HexacoreSpec, last: HexacoreSpec) {
     let fd_diff = if cur != last {
         format!(
             "{:>6.4}%",
-            100.0 * fd_per_cost(fd - last_fd, (cost - last_cost) as f64)
+            100.0 * fd_per_cost(fd, last_fd, cost, last_cost)
         )
     } else {
         "       ".to_owned()
@@ -103,8 +106,10 @@ fn best_next_skill(spec: HexacoreSpec) -> HexacoreSpec {
         new_spec.0[skill] = level + 1;
         if new_spec.valid() {
             let effic = fd_per_cost(
-                simulate_hexacores(new_spec) - old_fd,
-                (new_spec.cost() - old_cost) as f64,
+                simulate_hexacores(new_spec),
+                old_fd,
+                new_spec.cost(),
+                old_cost,
             );
             choices.push((effic, new_spec.clone()));
 
@@ -112,8 +117,10 @@ fn best_next_skill(spec: HexacoreSpec) -> HexacoreSpec {
                 // Round up to the nearest multiple of 10
                 new_spec.0[skill] = (new_spec.0[skill] / 10 + 1) * 10;
                 let effic = fd_per_cost(
-                    simulate_hexacores(new_spec) - old_fd,
-                    (new_spec.cost() - old_cost) as f64,
+                    simulate_hexacores(new_spec),
+                    old_fd,
+                    new_spec.cost(),
+                    old_cost,
                 );
                 choices.push((effic, new_spec));
             } else {
@@ -126,8 +133,10 @@ fn best_next_skill(spec: HexacoreSpec) -> HexacoreSpec {
                     }
 
                     let effic = fd_per_cost(
-                        simulate_hexacores(new_spec) - old_fd,
-                        (new_spec.cost() - old_cost) as f64,
+                        simulate_hexacores(new_spec),
+                        old_fd,
+                        new_spec.cost(),
+                        old_cost,
                     );
                     if effic > best_effic {
                         best_spec = new_spec.clone();
