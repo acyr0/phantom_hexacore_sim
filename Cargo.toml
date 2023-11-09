@@ -5,6 +5,7 @@ edition = "2021"
 
 [features]
 sol_erda = []
+table_output = []
 
 [dependencies]
 cfg-if = "1.0.0"

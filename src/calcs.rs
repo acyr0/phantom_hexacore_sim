@@ -48,7 +48,7 @@ fn simulate_origin(ba: &BA, origin: u8, att_percent: f64, boss: f64, remaining_p
     // TODO: Bishop Bene WJ4?
     let non_peak_multiplier: f64 =
         (100.0 + att_percent) / (100.0 + att_percent + 100.0) *     // Ring of Restraint 4
-        1.0 / 1.4 *                                                 // Last Resort 2
+        1.0 / 1.36 *                                                // Last Resort 2
         (100.0 + boss) / (100.0 + boss + 60.0)                      // AB Link
     ;
 

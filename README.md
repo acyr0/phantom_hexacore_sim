@@ -8,10 +8,17 @@ values in [src/config.rs](src/config.rs) to your liking, and run:
 ```
 cargo run --release
 ```
+
 If you want the calculations to be based on Sol Erda rather than Sol Erda
 Fragments, you can run the following instead:
 ```
 cargo run --release --features sol_erda
+```
+
+If you want table output that you can paste into Google Sheets, then you can
+use:
+```
+cargo run --release --features table_output | pbcopy
 ```
 
 ## methodology

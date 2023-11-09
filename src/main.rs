@@ -14,15 +14,19 @@ fn fd_per_cost(fd_diff: f64, cost_diff: f64) -> f64 {
     f64::powf(1.0 + fd_diff, 1.0 / cost_diff) - 1.0
 }
 
-/// Don't print multiple lines when the same skill is increasing in level.
-fn should_display(next: HexacoreSpec, last_printed: HexacoreSpec) -> bool {
-    let mut differing_levels = Vec::new();
-    for (skill, _) in next.0 {
-        if next.0[skill] != last_printed.0[skill] {
-            differing_levels.push(skill);
+fn differing_skills(a: HexacoreSpec, b: HexacoreSpec) -> Vec<HexacoreSkill> {
+    let mut ret = Vec::new();
+    for (skill, _) in a.0 {
+        if a.0[skill] != b.0[skill] {
+            ret.push(skill);
         }
     }
-    differing_levels.len() > 1
+    ret
+}
+
+/// Don't print multiple lines when the same skill is increasing in level.
+fn should_display(next: HexacoreSpec, last_printed: HexacoreSpec) -> bool {
+    differing_skills(next, last_printed).len() > 1
 }
 
 fn display(cur: HexacoreSpec, last: HexacoreSpec) {
@@ -34,14 +38,40 @@ fn display(cur: HexacoreSpec, last: HexacoreSpec) {
 
     let fd_diff = if cur != last {
         format!(
-            "{:>6.2}%",
-            1000.0 * 100.0 * fd_per_cost(fd - last_fd, (cost - last_cost) as f64)
+            "{:>6.4}%",
+            100.0 * fd_per_cost(fd - last_fd, (cost - last_cost) as f64)
         )
     } else {
         "       ".to_owned()
     };
+    #[cfg(feature = "table_output")]
+    {
+        let changed = differing_skills(cur, last);
+        if changed.len() > 0 {
+            assert_eq!(changed.len(), 1);
+            let changed = changed[0];
+            let skill_name = match changed {
+                HexacoreSkill::DefyingFate => "Defying Fate",
+                HexacoreSkill::TempestVI => "Tempest VI",
+                HexacoreSkill::AceInTheHole => "Ace",
+                HexacoreSkill::LuckOfTheDraw => "LotD",
+                HexacoreSkill::PhantomsMark => "Phantom's Mark",
+                HexacoreSkill::RiftBreak => "Rift Break",
+            };
+            let start = last.0[changed];
+            let end = cur.0[changed];
+            let level_diff = if end - start == 1 {
+                end.to_string()
+            } else {
+                format!("{start}-{end}")
+            };
+            println!("{skill_name} {level_diff}\t{fd_diff}");
+        }
+    }
+
+    #[cfg(not(feature = "table_output"))]
     println!(
-        "Cost: {:<5}    FD Gain: {:5.2}%    mFD/cost: {}    Origin: {:<2}    Mastery: {:<2}    LotD: {:<2}    Ace: {:<2}    Mark: {:<2}    Rift Break: {:<2}",
+        "Cost: {:<5}    FD Gain: {:5.2}%    FD/cost: {}    Origin: {:<2}    Mastery: {:<2}    LotD: {:<2}    Ace: {:<2}    Mark: {:<2}    Rift Break: {:<2}",
         cur.cost(),
         100.0 * fd,
         fd_diff,
