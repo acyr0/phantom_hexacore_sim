@@ -6,7 +6,6 @@ mod types;
 use enum_map::enum_map;
 
 use crate::calcs::simulate_hexacores;
-use crate::constants::BREAKPOINTS;
 use crate::types::{HexacoreSkill, HexacoreSpec};
 
 /// FD is multiplicative, so we use the nth root to calculate a per-cost amount.
@@ -33,11 +32,15 @@ fn should_display(next: HexacoreSpec, last_printed: HexacoreSpec) -> bool {
 }
 
 fn display(cur: HexacoreSpec, last: HexacoreSpec) {
+    let base_fd = simulate_hexacores(HexacoreSpec(
+        enum_map! { HexacoreSkill::TempestVI => 1, _ => 0 },
+    ));
+
     let last_cost = last.cost();
-    let last_fd = simulate_hexacores(last);
+    let last_fd = (1.0 + simulate_hexacores(last)) / (1.0 + base_fd) - 1.0;
 
     let cost = cur.cost();
-    let fd = simulate_hexacores(cur);
+    let fd = (1.0 + simulate_hexacores(cur)) / (1.0 + base_fd) - 1.0;
 
     let fd_diff = if cur != last {
         format!(
@@ -91,11 +94,6 @@ fn display(cur: HexacoreSpec, last: HexacoreSpec) {
 /// configuration:
 ///   - We only need to look at configurations that increase single skills, as the fd/cost
 ///     efficiency of increasing 2 different skills will never be higher than 1 of them individually.
-///   - Because the damage increases are uniform outside of the 1/10/20/30 breakpoints, and the
-///     efficiency is monotonically non-increasing, we have 2 cases:
-///       - When we are not at 0/9/19/29, we only need to consider +1 level and the next breakpoint
-///       - When we are at 0/9/19/29, then we need to consider the breakpoint, and some levels past
-///         it (until the efficiency starts decreasing)
 fn best_next_skill(spec: HexacoreSpec) -> HexacoreSpec {
     let old_fd = simulate_hexacores(spec);
     let old_cost = spec.cost();
@@ -103,49 +101,17 @@ fn best_next_skill(spec: HexacoreSpec) -> HexacoreSpec {
     let mut choices = Vec::new();
     for (skill, &level) in &spec.0 {
         let mut new_spec = spec.clone();
-        new_spec.0[skill] = level + 1;
-        if new_spec.valid() {
-            let effic = fd_per_cost(
-                simulate_hexacores(new_spec),
-                old_fd,
-                new_spec.cost(),
-                old_cost,
-            );
-            choices.push((effic, new_spec.clone()));
 
-            if !BREAKPOINTS.contains(&(level + 1)) {
-                // Round up to the nearest multiple of 10
-                new_spec.0[skill] = (new_spec.0[skill] / 10 + 1) * 10;
+        for next_level in (level + 1)..=30 {
+            new_spec.0[skill] = next_level;
+            if new_spec.valid() {
                 let effic = fd_per_cost(
                     simulate_hexacores(new_spec),
                     old_fd,
                     new_spec.cost(),
                     old_cost,
                 );
-                choices.push((effic, new_spec));
-            } else {
-                let mut best_spec = new_spec.clone();
-                let mut best_effic = effic;
-                loop {
-                    new_spec.0[skill] = new_spec.0[skill] + 1;
-                    if !new_spec.valid() {
-                        break;
-                    }
-
-                    let effic = fd_per_cost(
-                        simulate_hexacores(new_spec),
-                        old_fd,
-                        new_spec.cost(),
-                        old_cost,
-                    );
-                    if effic > best_effic {
-                        best_spec = new_spec.clone();
-                        best_effic = effic;
-                    } else {
-                        break;
-                    }
-                }
-                choices.push((best_effic, best_spec));
+                choices.push((effic, new_spec.clone()));
             }
         }
     }
@@ -156,6 +122,7 @@ fn best_next_skill(spec: HexacoreSpec) -> HexacoreSpec {
 fn main() {
     let start: HexacoreSpec = HexacoreSpec(enum_map! {
         HexacoreSkill::DefyingFate => 1,
+        HexacoreSkill::TempestVI => 1,
         _ => 0,
     });
     let goal: HexacoreSpec = HexacoreSpec(enum_map! {

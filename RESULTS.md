@@ -35,19 +35,19 @@ arbitrarily chosen here (rather than something like 3 minutes) to avoid skewing
 the results too far towards the burst skills.
 
 You should use this if you want to optimize for solo, high-Tempest-uptime
-bosses after New Age.
+bosses.
 
 ### hard seren p2 ft. bishop + kanna
-[![hard seren p2 ba ft. bishop + kanna, page 1](img/thumb/hseren_ba_1.png)](img/hseren_ba_1.png)
-[![hard seren p2 ba ft. bishop + kanna, page 2](img/thumb/hseren_ba_2.png)](img/hseren_ba_2.png)
+[![extreme seren p2 ba ft. bishop + kanna, page 1](img/thumb/xseren_ba_1.png)](img/xseren_ba_1.png)
+[![extreme seren p2 ba ft. bishop + kanna, page 2](img/thumb/xseren_ba_2.png)](img/xseren_ba_2.png)
+[![extreme seren p2 ba ft. bishop + kanna, page 3](img/thumb/xseren_ba_3.png)](img/xseren_ba_3.png)
 
-This is a 4.5 minute, 2 burst Hard Seren P2 BA (roughly equivalent to the 9
-minute 4 burst dummy BA above). Thanks to mostly Benediction, this skews the BA
-contribution very far in favor of Luck of the Draw. Seren is also a boss where
-Tempest uptime is difficult.
+This is a 6 burst, 3 origin Extreme Seren P2 BA. Thanks to mostly Benediction,
+this skews the BA contribution very far in favor of Luck of the Draw. Seren is
+also a boss where Tempest uptime is difficult.
 
 You should use this if you want to optimize for party, low-Tempest-uptime
-bosses after New Age.
+bosses.
 
 ## sol erda fragments are the bottleneck
 
@@ -111,58 +111,73 @@ Cost: 17374    FD Gain: 63.58%    FD/cost: 0.0006%    Origin: 30    Mastery: 30 
 Cost: 20184    FD Gain: 65.64%    FD/cost: 0.0004%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 30    Rift Break: 30
 ```
 
-### based on hard seren p2 ft. bishop + kanna
+### based on extreme seren p2 ft. bishop + kanna
 ```
-Cost: 0        FD Gain: 23.04%    FD/cost:            Origin: 1     Mastery: 0     LotD: 0     Ace: 0     Mark: 0     Rift Break: 0
-Cost: 75       FD Gain: 26.33%    FD/cost: 0.0352%    Origin: 1     Mastery: 0     LotD: 1     Ace: 0     Mark: 0     Rift Break: 0
-Cost: 105      FD Gain: 27.07%    FD/cost: 0.0196%    Origin: 2     Mastery: 0     LotD: 1     Ace: 0     Mark: 0     Rift Break: 0
-Cost: 180      FD Gain: 28.88%    FD/cost: 0.0188%    Origin: 2     Mastery: 0     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0
-Cost: 405      FD Gain: 32.60%    FD/cost: 0.0126%    Origin: 7     Mastery: 0     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0
-Cost: 428      FD Gain: 32.90%    FD/cost: 0.0098%    Origin: 7     Mastery: 0     LotD: 2     Ace: 1     Mark: 0     Rift Break: 0
-Cost: 488      FD Gain: 33.64%    FD/cost: 0.0093%    Origin: 8     Mastery: 0     LotD: 2     Ace: 1     Mark: 0     Rift Break: 0
-Cost: 563      FD Gain: 34.53%    FD/cost: 0.0088%    Origin: 8     Mastery: 0     LotD: 2     Ace: 1     Mark: 1     Rift Break: 0
-Cost: 628      FD Gain: 35.27%    FD/cost: 0.0085%    Origin: 9     Mastery: 0     LotD: 2     Ace: 1     Mark: 1     Rift Break: 0
-Cost: 1043     FD Gain: 39.16%    FD/cost: 0.0068%    Origin: 9     Mastery: 0     LotD: 10    Ace: 1     Mark: 1     Rift Break: 0
-Cost: 1118     FD Gain: 39.82%    FD/cost: 0.0063%    Origin: 9     Mastery: 0     LotD: 10    Ace: 1     Mark: 1     Rift Break: 1
-Cost: 1141     FD Gain: 39.98%    FD/cost: 0.0051%    Origin: 9     Mastery: 0     LotD: 10    Ace: 2     Mark: 1     Rift Break: 1
-Cost: 1841     FD Gain: 44.82%    FD/cost: 0.0049%    Origin: 15    Mastery: 0     LotD: 10    Ace: 2     Mark: 1     Rift Break: 1
-Cost: 1868     FD Gain: 44.99%    FD/cost: 0.0042%    Origin: 15    Mastery: 0     LotD: 10    Ace: 3     Mark: 1     Rift Break: 1
-Cost: 1998     FD Gain: 45.74%    FD/cost: 0.0040%    Origin: 16    Mastery: 0     LotD: 10    Ace: 3     Mark: 1     Rift Break: 1
-Cost: 2240     FD Gain: 47.10%    FD/cost: 0.0038%    Origin: 16    Mastery: 9     LotD: 10    Ace: 3     Mark: 1     Rift Break: 1
-Cost: 2270     FD Gain: 47.27%    FD/cost: 0.0037%    Origin: 16    Mastery: 9     LotD: 10    Ace: 4     Mark: 1     Rift Break: 1
-Cost: 2410     FD Gain: 48.02%    FD/cost: 0.0036%    Origin: 17    Mastery: 9     LotD: 10    Ace: 4     Mark: 1     Rift Break: 1
-Cost: 2768     FD Gain: 49.83%    FD/cost: 0.0034%    Origin: 17    Mastery: 9     LotD: 10    Ace: 10    Mark: 1     Rift Break: 1
-Cost: 2918     FD Gain: 50.58%    FD/cost: 0.0033%    Origin: 18    Mastery: 9     LotD: 10    Ace: 10    Mark: 1     Rift Break: 1
-Cost: 2978     FD Gain: 50.88%    FD/cost: 0.0033%    Origin: 18    Mastery: 9     LotD: 11    Ace: 10    Mark: 1     Rift Break: 1
-Cost: 3138     FD Gain: 51.63%    FD/cost: 0.0031%    Origin: 19    Mastery: 9     LotD: 11    Ace: 10    Mark: 1     Rift Break: 1
-Cost: 3206     FD Gain: 51.93%    FD/cost: 0.0029%    Origin: 19    Mastery: 9     LotD: 12    Ace: 10    Mark: 1     Rift Break: 1
-Cost: 3906     FD Gain: 54.97%    FD/cost: 0.0028%    Origin: 22    Mastery: 9     LotD: 12    Ace: 10    Mark: 1     Rift Break: 1
-Cost: 4853     FD Gain: 58.85%    FD/cost: 0.0026%    Origin: 22    Mastery: 9     LotD: 20    Ace: 10    Mark: 1     Rift Break: 1
-Cost: 6893     FD Gain: 67.14%    FD/cost: 0.0025%    Origin: 30    Mastery: 9     LotD: 20    Ace: 10    Mark: 1     Rift Break: 1
-Cost: 6916     FD Gain: 67.23%    FD/cost: 0.0021%    Origin: 30    Mastery: 9     LotD: 20    Ace: 10    Mark: 2     Rift Break: 1
-Cost: 7206     FD Gain: 68.18%    FD/cost: 0.0020%    Origin: 30    Mastery: 14    LotD: 20    Ace: 10    Mark: 2     Rift Break: 1
-Cost: 9001     FD Gain: 74.16%    FD/cost: 0.0019%    Origin: 30    Mastery: 14    LotD: 30    Ace: 10    Mark: 2     Rift Break: 1
-Cost: 9061     FD Gain: 74.36%    FD/cost: 0.0018%    Origin: 30    Mastery: 15    LotD: 30    Ace: 10    Mark: 2     Rift Break: 1
-Cost: 9088     FD Gain: 74.44%    FD/cost: 0.0017%    Origin: 30    Mastery: 15    LotD: 30    Ace: 10    Mark: 3     Rift Break: 1
-Cost: 9153     FD Gain: 74.63%    FD/cost: 0.0017%    Origin: 30    Mastery: 16    LotD: 30    Ace: 10    Mark: 3     Rift Break: 1
-Cost: 9213     FD Gain: 74.79%    FD/cost: 0.0016%    Origin: 30    Mastery: 16    LotD: 30    Ace: 11    Mark: 3     Rift Break: 1
-Cost: 9283     FD Gain: 74.98%    FD/cost: 0.0016%    Origin: 30    Mastery: 17    LotD: 30    Ace: 11    Mark: 3     Rift Break: 1
-Cost: 9313     FD Gain: 75.06%    FD/cost: 0.0015%    Origin: 30    Mastery: 17    LotD: 30    Ace: 11    Mark: 4     Rift Break: 1
-Cost: 9336     FD Gain: 75.12%    FD/cost: 0.0015%    Origin: 30    Mastery: 17    LotD: 30    Ace: 11    Mark: 4     Rift Break: 2
-Cost: 9411     FD Gain: 75.32%    FD/cost: 0.0015%    Origin: 30    Mastery: 18    LotD: 30    Ace: 11    Mark: 4     Rift Break: 2
-Cost: 9769     FD Gain: 76.21%    FD/cost: 0.0014%    Origin: 30    Mastery: 18    LotD: 30    Ace: 11    Mark: 10    Rift Break: 2
-Cost: 9837     FD Gain: 76.37%    FD/cost: 0.0014%    Origin: 30    Mastery: 18    LotD: 30    Ace: 12    Mark: 10    Rift Break: 2
-Cost: 9917     FD Gain: 76.56%    FD/cost: 0.0014%    Origin: 30    Mastery: 19    LotD: 30    Ace: 12    Mark: 10    Rift Break: 2
-Cost: 10864    FD Gain: 78.70%    FD/cost: 0.0013%    Origin: 30    Mastery: 19    LotD: 30    Ace: 20    Mark: 10    Rift Break: 2
-Cost: 11279    FD Gain: 79.47%    FD/cost: 0.0010%    Origin: 30    Mastery: 19    LotD: 30    Ace: 20    Mark: 10    Rift Break: 10
-Cost: 13074    FD Gain: 82.76%    FD/cost: 0.0010%    Origin: 30    Mastery: 19    LotD: 30    Ace: 30    Mark: 10    Rift Break: 10
-Cost: 14194    FD Gain: 84.68%    FD/cost: 0.0009%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 10    Rift Break: 10
-Cost: 15269    FD Gain: 85.89%    FD/cost: 0.0006%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 20    Rift Break: 10
-Cost: 15329    FD Gain: 85.95%    FD/cost: 0.0005%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 20    Rift Break: 11
-Cost: 17124    FD Gain: 87.57%    FD/cost: 0.0005%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 30    Rift Break: 11
-Cost: 18139    FD Gain: 88.41%    FD/cost: 0.0004%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 30    Rift Break: 20
-Cost: 18389    FD Gain: 88.60%    FD/cost: 0.0004%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 30    Rift Break: 20
-Cost: 20184    FD Gain: 89.79%    FD/cost: 0.0004%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 30    Rift Break: 30
+Cost: 50       FD Gain: 23.99%    FD/cost:            Origin: 1     Mastery: 1     LotD: 0     Ace: 0     Mark: 0     Rift Break: 0 
+Cost: 125      FD Gain: 27.29%    FD/cost: 0.0351%    Origin: 1     Mastery: 1     LotD: 1     Ace: 0     Mark: 0     Rift Break: 0 
+Cost: 200      FD Gain: 29.38%    FD/cost: 0.0217%    Origin: 1     Mastery: 1     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 350      FD Gain: 32.48%    FD/cost: 0.0158%    Origin: 5     Mastery: 1     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 365      FD Gain: 32.73%    FD/cost: 0.0126%    Origin: 5     Mastery: 2     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 470      FD Gain: 34.27%    FD/cost: 0.0110%    Origin: 7     Mastery: 2     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 488      FD Gain: 34.52%    FD/cost: 0.0104%    Origin: 7     Mastery: 3     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 511      FD Gain: 34.82%    FD/cost: 0.0097%    Origin: 7     Mastery: 3     LotD: 2     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 571      FD Gain: 35.60%    FD/cost: 0.0095%    Origin: 8     Mastery: 3     LotD: 2     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 591      FD Gain: 35.85%    FD/cost: 0.0092%    Origin: 8     Mastery: 4     LotD: 2     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 656      FD Gain: 36.62%    FD/cost: 0.0087%    Origin: 9     Mastery: 4     LotD: 2     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 683      FD Gain: 36.92%    FD/cost: 0.0081%    Origin: 9     Mastery: 4     LotD: 3     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 706      FD Gain: 37.17%    FD/cost: 0.0080%    Origin: 9     Mastery: 5     LotD: 3     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 781      FD Gain: 37.96%    FD/cost: 0.0076%    Origin: 9     Mastery: 5     LotD: 3     Ace: 1     Mark: 1     Rift Break: 0 
+Cost: 806      FD Gain: 38.21%    FD/cost: 0.0073%    Origin: 9     Mastery: 6     LotD: 3     Ace: 1     Mark: 1     Rift Break: 0 
+Cost: 836      FD Gain: 38.51%    FD/cost: 0.0072%    Origin: 9     Mastery: 6     LotD: 4     Ace: 1     Mark: 1     Rift Break: 0 
+Cost: 911      FD Gain: 39.19%    FD/cost: 0.0066%    Origin: 9     Mastery: 6     LotD: 4     Ace: 1     Mark: 1     Rift Break: 1 
+Cost: 1269     FD Gain: 42.50%    FD/cost: 0.0066%    Origin: 9     Mastery: 6     LotD: 10    Ace: 1     Mark: 1     Rift Break: 1 
+Cost: 1327     FD Gain: 43.00%    FD/cost: 0.0061%    Origin: 9     Mastery: 8     LotD: 10    Ace: 1     Mark: 1     Rift Break: 1 
+Cost: 1350     FD Gain: 43.19%    FD/cost: 0.0058%    Origin: 9     Mastery: 8     LotD: 10    Ace: 2     Mark: 1     Rift Break: 1 
+Cost: 1383     FD Gain: 43.44%    FD/cost: 0.0053%    Origin: 9     Mastery: 9     LotD: 10    Ace: 2     Mark: 1     Rift Break: 1 
+Cost: 1410     FD Gain: 43.63%    FD/cost: 0.0049%    Origin: 9     Mastery: 9     LotD: 10    Ace: 3     Mark: 1     Rift Break: 1 
+Cost: 2110     FD Gain: 48.33%    FD/cost: 0.0046%    Origin: 15    Mastery: 9     LotD: 10    Ace: 3     Mark: 1     Rift Break: 1 
+Cost: 2140     FD Gain: 48.52%    FD/cost: 0.0043%    Origin: 15    Mastery: 9     LotD: 10    Ace: 4     Mark: 1     Rift Break: 1 
+Cost: 2270     FD Gain: 49.30%    FD/cost: 0.0040%    Origin: 16    Mastery: 9     LotD: 10    Ace: 4     Mark: 1     Rift Break: 1 
+Cost: 2628     FD Gain: 51.39%    FD/cost: 0.0039%    Origin: 16    Mastery: 9     LotD: 10    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 2918     FD Gain: 52.95%    FD/cost: 0.0035%    Origin: 18    Mastery: 9     LotD: 10    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 2978     FD Gain: 53.25%    FD/cost: 0.0033%    Origin: 18    Mastery: 9     LotD: 11    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 3138     FD Gain: 54.03%    FD/cost: 0.0032%    Origin: 19    Mastery: 9     LotD: 11    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 3206     FD Gain: 54.34%    FD/cost: 0.0029%    Origin: 19    Mastery: 9     LotD: 12    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 3556     FD Gain: 55.84%    FD/cost: 0.0028%    Origin: 19    Mastery: 15    LotD: 12    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 4503     FD Gain: 59.74%    FD/cost: 0.0026%    Origin: 19    Mastery: 15    LotD: 20    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 4568     FD Gain: 59.99%    FD/cost: 0.0024%    Origin: 19    Mastery: 16    LotD: 20    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 6088     FD Gain: 65.74%    FD/cost: 0.0023%    Origin: 26    Mastery: 16    LotD: 20    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 6158     FD Gain: 65.99%    FD/cost: 0.0022%    Origin: 26    Mastery: 17    LotD: 20    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 6388     FD Gain: 66.79%    FD/cost: 0.0021%    Origin: 27    Mastery: 17    LotD: 20    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 6463     FD Gain: 67.04%    FD/cost: 0.0020%    Origin: 27    Mastery: 18    LotD: 20    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 6703     FD Gain: 67.84%    FD/cost: 0.0020%    Origin: 28    Mastery: 18    LotD: 20    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 8498     FD Gain: 73.84%    FD/cost: 0.0020%    Origin: 28    Mastery: 18    LotD: 30    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 8748     FD Gain: 74.64%    FD/cost: 0.0018%    Origin: 29    Mastery: 18    LotD: 30    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 8808     FD Gain: 74.83%    FD/cost: 0.0018%    Origin: 29    Mastery: 18    LotD: 30    Ace: 11    Mark: 1     Rift Break: 1 
+Cost: 9308     FD Gain: 76.41%    FD/cost: 0.0018%    Origin: 30    Mastery: 18    LotD: 30    Ace: 11    Mark: 1     Rift Break: 1 
+Cost: 9388     FD Gain: 76.67%    FD/cost: 0.0018%    Origin: 30    Mastery: 19    LotD: 30    Ace: 11    Mark: 1     Rift Break: 1 
+Cost: 9411     FD Gain: 76.74%    FD/cost: 0.0018%    Origin: 30    Mastery: 19    LotD: 30    Ace: 11    Mark: 2     Rift Break: 1 
+Cost: 9479     FD Gain: 76.93%    FD/cost: 0.0016%    Origin: 30    Mastery: 19    LotD: 30    Ace: 12    Mark: 2     Rift Break: 1 
+Cost: 9502     FD Gain: 76.99%    FD/cost: 0.0015%    Origin: 30    Mastery: 19    LotD: 30    Ace: 12    Mark: 2     Rift Break: 2 
+Cost: 9529     FD Gain: 77.06%    FD/cost: 0.0015%    Origin: 30    Mastery: 19    LotD: 30    Ace: 12    Mark: 3     Rift Break: 2 
+Cost: 10476    FD Gain: 79.53%    FD/cost: 0.0015%    Origin: 30    Mastery: 19    LotD: 30    Ace: 20    Mark: 3     Rift Break: 2 
+Cost: 10506    FD Gain: 79.60%    FD/cost: 0.0013%    Origin: 30    Mastery: 19    LotD: 30    Ace: 20    Mark: 4     Rift Break: 2 
+Cost: 10533    FD Gain: 79.66%    FD/cost: 0.0013%    Origin: 30    Mastery: 19    LotD: 30    Ace: 20    Mark: 4     Rift Break: 3 
+Cost: 11293    FD Gain: 81.42%    FD/cost: 0.0013%    Origin: 30    Mastery: 26    LotD: 30    Ace: 20    Mark: 4     Rift Break: 3 
+Cost: 11651    FD Gain: 82.20%    FD/cost: 0.0012%    Origin: 30    Mastery: 26    LotD: 30    Ace: 20    Mark: 10    Rift Break: 3 
+Cost: 11766    FD Gain: 82.45%    FD/cost: 0.0012%    Origin: 30    Mastery: 27    LotD: 30    Ace: 20    Mark: 10    Rift Break: 3 
+Cost: 13561    FD Gain: 86.25%    FD/cost: 0.0011%    Origin: 30    Mastery: 27    LotD: 30    Ace: 30    Mark: 10    Rift Break: 3 
+Cost: 13681    FD Gain: 86.50%    FD/cost: 0.0011%    Origin: 30    Mastery: 28    LotD: 30    Ace: 30    Mark: 10    Rift Break: 3 
+Cost: 13711    FD Gain: 86.56%    FD/cost: 0.0011%    Origin: 30    Mastery: 28    LotD: 30    Ace: 30    Mark: 10    Rift Break: 4 
+Cost: 13836    FD Gain: 86.81%    FD/cost: 0.0011%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 10    Rift Break: 4 
+Cost: 14194    FD Gain: 87.50%    FD/cost: 0.0010%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 10    Rift Break: 10
+Cost: 14322    FD Gain: 87.64%    FD/cost: 0.0006%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 12    Rift Break: 10
+Cost: 14382    FD Gain: 87.70%    FD/cost: 0.0006%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 12    Rift Break: 11
+Cost: 14632    FD Gain: 87.95%    FD/cost: 0.0005%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 12    Rift Break: 11
+Cost: 15579    FD Gain: 88.88%    FD/cost: 0.0005%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 20    Rift Break: 11
+Cost: 16594    FD Gain: 89.75%    FD/cost: 0.0005%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 20    Rift Break: 20
+Cost: 18389    FD Gain: 91.18%    FD/cost: 0.0004%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 30    Rift Break: 20
+Cost: 20184    FD Gain: 92.42%    FD/cost: 0.0004%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 30    Rift Break: 30
 ```
 
 ## sol erda is the bottleneck
@@ -202,36 +217,39 @@ Cost: 624      FD Gain: 63.52%    FD/cost: 0.0182%    Origin: 30    Mastery: 30 
 Cost: 720      FD Gain: 65.64%    FD/cost: 0.0134%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 30    Rift Break: 30
 ```
 
-### based on hard seren p2 ft. bishop + kanna
+### based on extreme seren p2 ft. bishop + kanna
 ```
-Cost: 0        FD Gain: 23.04%    FD/cost:            Origin: 1     Mastery: 0     LotD: 0     Ace: 0     Mark: 0     Rift Break: 0
-Cost: 4        FD Gain: 26.33%    FD/cost: 0.6617%    Origin: 1     Mastery: 0     LotD: 1     Ace: 0     Mark: 0     Rift Break: 0
-Cost: 7        FD Gain: 28.56%    FD/cost: 0.5849%    Origin: 4     Mastery: 0     LotD: 1     Ace: 0     Mark: 0     Rift Break: 0
-Cost: 11       FD Gain: 30.37%    FD/cost: 0.3498%    Origin: 4     Mastery: 0     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0
-Cost: 17       FD Gain: 32.60%    FD/cost: 0.2831%    Origin: 7     Mastery: 0     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0
-Cost: 20       FD Gain: 33.50%    FD/cost: 0.2250%    Origin: 7     Mastery: 0     LotD: 4     Ace: 1     Mark: 0     Rift Break: 0
-Cost: 26       FD Gain: 34.98%    FD/cost: 0.1847%    Origin: 9     Mastery: 0     LotD: 4     Ace: 1     Mark: 0     Rift Break: 0
-Cost: 30       FD Gain: 35.87%    FD/cost: 0.1644%    Origin: 9     Mastery: 0     LotD: 4     Ace: 1     Mark: 1     Rift Break: 0
-Cost: 70       FD Gain: 42.97%    FD/cost: 0.1274%    Origin: 18    Mastery: 0     LotD: 4     Ace: 1     Mark: 1     Rift Break: 0
-Cost: 73       FD Gain: 43.46%    FD/cost: 0.1149%    Origin: 18    Mastery: 0     LotD: 4     Ace: 4     Mark: 1     Rift Break: 0
-Cost: 77       FD Gain: 44.12%    FD/cost: 0.1142%    Origin: 18    Mastery: 0     LotD: 4     Ace: 4     Mark: 1     Rift Break: 1
-Cost: 97       FD Gain: 47.41%    FD/cost: 0.1129%    Origin: 18    Mastery: 0     LotD: 10    Ace: 4     Mark: 1     Rift Break: 1
-Cost: 187      FD Gain: 59.49%    FD/cost: 0.0876%    Origin: 30    Mastery: 0     LotD: 10    Ace: 4     Mark: 1     Rift Break: 1
-Cost: 227      FD Gain: 63.97%    FD/cost: 0.0694%    Origin: 30    Mastery: 0     LotD: 20    Ace: 4     Mark: 1     Rift Break: 1
-Cost: 236      FD Gain: 64.95%    FD/cost: 0.0661%    Origin: 30    Mastery: 7     LotD: 20    Ace: 4     Mark: 1     Rift Break: 1
-Cost: 292      FD Gain: 70.93%    FD/cost: 0.0636%    Origin: 30    Mastery: 7     LotD: 30    Ace: 4     Mark: 1     Rift Break: 1
-Cost: 296      FD Gain: 71.32%    FD/cost: 0.0560%    Origin: 30    Mastery: 9     LotD: 30    Ace: 4     Mark: 1     Rift Break: 1
-Cost: 316      FD Gain: 73.12%    FD/cost: 0.0525%    Origin: 30    Mastery: 9     LotD: 30    Ace: 10    Mark: 1     Rift Break: 1
-Cost: 337      FD Gain: 74.85%    FD/cost: 0.0472%    Origin: 30    Mastery: 18    LotD: 30    Ace: 10    Mark: 1     Rift Break: 1
-Cost: 340      FD Gain: 75.09%    FD/cost: 0.0462%    Origin: 30    Mastery: 18    LotD: 30    Ace: 10    Mark: 4     Rift Break: 1
-Cost: 343      FD Gain: 75.28%    FD/cost: 0.0365%    Origin: 30    Mastery: 19    LotD: 30    Ace: 10    Mark: 4     Rift Break: 1
-Cost: 383      FD Gain: 77.75%    FD/cost: 0.0349%    Origin: 30    Mastery: 19    LotD: 30    Ace: 20    Mark: 4     Rift Break: 1
-Cost: 386      FD Gain: 77.93%    FD/cost: 0.0336%    Origin: 30    Mastery: 19    LotD: 30    Ace: 20    Mark: 4     Rift Break: 4
-Cost: 442      FD Gain: 81.22%    FD/cost: 0.0327%    Origin: 30    Mastery: 19    LotD: 30    Ace: 30    Mark: 4     Rift Break: 4
-Cost: 478      FD Gain: 83.13%    FD/cost: 0.0292%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 4     Rift Break: 4
-Cost: 498      FD Gain: 84.02%    FD/cost: 0.0242%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 10    Rift Break: 4
-Cost: 518      FD Gain: 84.68%    FD/cost: 0.0178%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 10    Rift Break: 10
-Cost: 614      FD Gain: 87.51%    FD/cost: 0.0159%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 30    Rift Break: 10
-Cost: 710      FD Gain: 89.60%    FD/cost: 0.0115%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 30    Rift Break: 30
-Cost: 720      FD Gain: 89.79%    FD/cost: 0.0101%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 30    Rift Break: 30
+Cost: 3        FD Gain: 23.99%    FD/cost:            Origin: 1     Mastery: 1     LotD: 0     Ace: 0     Mark: 0     Rift Break: 0 
+Cost: 7        FD Gain: 27.29%    FD/cost: 0.6594%    Origin: 1     Mastery: 1     LotD: 1     Ace: 0     Mark: 0     Rift Break: 0 
+Cost: 10       FD Gain: 29.61%    FD/cost: 0.6043%    Origin: 4     Mastery: 1     LotD: 1     Ace: 0     Mark: 0     Rift Break: 0 
+Cost: 14       FD Gain: 31.70%    FD/cost: 0.4005%    Origin: 4     Mastery: 1     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 20       FD Gain: 34.02%    FD/cost: 0.2916%    Origin: 7     Mastery: 1     LotD: 1     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 23       FD Gain: 34.92%    FD/cost: 0.2235%    Origin: 7     Mastery: 1     LotD: 4     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 29       FD Gain: 36.47%    FD/cost: 0.1903%    Origin: 9     Mastery: 1     LotD: 4     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 35       FD Gain: 37.98%    FD/cost: 0.1829%    Origin: 9     Mastery: 7     LotD: 4     Ace: 1     Mark: 0     Rift Break: 0 
+Cost: 39       FD Gain: 38.76%    FD/cost: 0.1415%    Origin: 9     Mastery: 7     LotD: 4     Ace: 1     Mark: 1     Rift Break: 0 
+Cost: 42       FD Gain: 39.33%    FD/cost: 0.1367%    Origin: 9     Mastery: 7     LotD: 4     Ace: 4     Mark: 1     Rift Break: 0 
+Cost: 82       FD Gain: 46.37%    FD/cost: 0.1234%    Origin: 18    Mastery: 7     LotD: 4     Ace: 4     Mark: 1     Rift Break: 0 
+Cost: 86       FD Gain: 47.06%    FD/cost: 0.1171%    Origin: 18    Mastery: 7     LotD: 4     Ace: 4     Mark: 1     Rift Break: 1 
+Cost: 106      FD Gain: 50.36%    FD/cost: 0.1111%    Origin: 18    Mastery: 7     LotD: 10    Ace: 4     Mark: 1     Rift Break: 1 
+Cost: 111      FD Gain: 51.14%    FD/cost: 0.1039%    Origin: 19    Mastery: 7     LotD: 10    Ace: 4     Mark: 1     Rift Break: 1 
+Cost: 115      FD Gain: 51.65%    FD/cost: 0.0829%    Origin: 19    Mastery: 9     LotD: 10    Ace: 4     Mark: 1     Rift Break: 1 
+Cost: 180      FD Gain: 59.79%    FD/cost: 0.0805%    Origin: 29    Mastery: 9     LotD: 10    Ace: 4     Mark: 1     Rift Break: 1 
+Cost: 220      FD Gain: 64.29%    FD/cost: 0.0695%    Origin: 29    Mastery: 9     LotD: 20    Ace: 4     Mark: 1     Rift Break: 1 
+Cost: 241      FD Gain: 66.55%    FD/cost: 0.0650%    Origin: 29    Mastery: 18    LotD: 20    Ace: 4     Mark: 1     Rift Break: 1 
+Cost: 297      FD Gain: 72.55%    FD/cost: 0.0633%    Origin: 29    Mastery: 18    LotD: 30    Ace: 4     Mark: 1     Rift Break: 1 
+Cost: 317      FD Gain: 74.64%    FD/cost: 0.0602%    Origin: 29    Mastery: 18    LotD: 30    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 320      FD Gain: 74.89%    FD/cost: 0.0478%    Origin: 29    Mastery: 19    LotD: 30    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 340      FD Gain: 76.48%    FD/cost: 0.0451%    Origin: 30    Mastery: 19    LotD: 30    Ace: 10    Mark: 1     Rift Break: 1 
+Cost: 343      FD Gain: 76.69%    FD/cost: 0.0403%    Origin: 30    Mastery: 19    LotD: 30    Ace: 10    Mark: 4     Rift Break: 1 
+Cost: 383      FD Gain: 79.54%    FD/cost: 0.0400%    Origin: 30    Mastery: 19    LotD: 30    Ace: 20    Mark: 4     Rift Break: 1 
+Cost: 415      FD Gain: 81.79%    FD/cost: 0.0390%    Origin: 30    Mastery: 28    LotD: 30    Ace: 20    Mark: 4     Rift Break: 1 
+Cost: 471      FD Gain: 85.59%    FD/cost: 0.0369%    Origin: 30    Mastery: 28    LotD: 30    Ace: 30    Mark: 4     Rift Break: 1 
+Cost: 475      FD Gain: 85.84%    FD/cost: 0.0338%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 4     Rift Break: 1 
+Cost: 478      FD Gain: 86.03%    FD/cost: 0.0336%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 4     Rift Break: 4 
+Cost: 498      FD Gain: 86.81%    FD/cost: 0.0210%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 10    Rift Break: 4 
+Cost: 518      FD Gain: 87.50%    FD/cost: 0.0184%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 10    Rift Break: 10
+Cost: 614      FD Gain: 89.99%    FD/cost: 0.0137%    Origin: 30    Mastery: 29    LotD: 30    Ace: 30    Mark: 30    Rift Break: 10
+Cost: 624      FD Gain: 90.24%    FD/cost: 0.0132%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 30    Rift Break: 10
+Cost: 720      FD Gain: 92.42%    FD/cost: 0.0119%    Origin: 30    Mastery: 30    LotD: 30    Ace: 30    Mark: 30    Rift Break: 30
 ```

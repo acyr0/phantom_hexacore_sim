@@ -23,9 +23,7 @@ cargo run --release --features table_output | pbcopy
 
 ## methodology
 The logic applied here greedily chooses the next most efficient upgrade at each
-step (effectively fd / cost), with some lookahead past the 1/10/20 breakpoints.
-
-The damage calculation is based on a pre-New Age BA, with the damage of the
-origin skill calculated from the contribution of Luck of the Draw given in the
-BA, and the damage of Tempest VI calculated as a lower effective cooldown +
-filling in the remainder of the compressed time with Mille.
+step (effectively fd / cost), with lookahead. Upgrades of different skills are
+assumed to be non-interactive (which is the case for Phantom's 6th job at the
+time of writing), so we can independently lookahead at all possible future
+levels of each individual skill.

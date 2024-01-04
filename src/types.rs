@@ -13,6 +13,8 @@ pub enum Skill {
     LuckOfTheDraw,
     PhantomsMark,
     RiftBreak,
+
+    DefyingFate,
 }
 
 #[derive(Debug)]
@@ -24,7 +26,6 @@ pub struct BA {
 #[derive(Debug)]
 pub struct BAColumn {
     pub contribution: f64,
-    pub times_used: u64,
 }
 
 #[derive(Debug, Clone, Copy, Enum)]
