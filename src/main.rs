@@ -32,9 +32,7 @@ fn should_display(next: HexacoreSpec, last_printed: HexacoreSpec) -> bool {
 }
 
 fn display(cur: HexacoreSpec, last: HexacoreSpec) {
-    let base_fd = simulate_hexacores(HexacoreSpec(
-        enum_map! { HexacoreSkill::TempestVI => 1, _ => 0 },
-    ));
+    let base_fd = simulate_hexacores(HexacoreSpec(enum_map! { _ => 0 }));
 
     let last_cost = last.cost();
     let last_fd = (1.0 + simulate_hexacores(last)) / (1.0 + base_fd) - 1.0;
@@ -59,6 +57,7 @@ fn display(cur: HexacoreSpec, last: HexacoreSpec) {
             let skill_name = match changed {
                 HexacoreSkill::DefyingFate => "Defying Fate",
                 HexacoreSkill::TempestVI => "Tempest VI",
+                HexacoreSkill::MilleVI => "Mille VI",
                 HexacoreSkill::AceInTheHole => "Ace",
                 HexacoreSkill::LuckOfTheDraw => "LotD",
                 HexacoreSkill::PhantomsMark => "Phantom's Mark",
@@ -77,12 +76,13 @@ fn display(cur: HexacoreSpec, last: HexacoreSpec) {
 
     #[cfg(not(feature = "table_output"))]
     println!(
-        "Cost: {:<5}    FD Gain: {:5.2}%    FD/cost: {}    Origin: {:<2}    Mastery: {:<2}    LotD: {:<2}    Ace: {:<2}    Mark: {:<2}    Rift Break: {:<2}",
+        "Cost: {:<5}    FD Gain: {:5.2}%    FD/cost: {}    Origin: {:<2}    Tempest VI: {:<2}    Mille VI: {:<2}    LotD: {:<2}    Ace: {:<2}    Mark: {:<2}    Rift Break: {:<2}",
         cur.cost(),
         100.0 * fd,
         fd_diff,
         cur.0[HexacoreSkill::DefyingFate],
         cur.0[HexacoreSkill::TempestVI],
+        cur.0[HexacoreSkill::MilleVI],
         cur.0[HexacoreSkill::LuckOfTheDraw],
         cur.0[HexacoreSkill::AceInTheHole],
         cur.0[HexacoreSkill::PhantomsMark],
@@ -122,7 +122,6 @@ fn best_next_skill(spec: HexacoreSpec) -> HexacoreSpec {
 fn main() {
     let start: HexacoreSpec = HexacoreSpec(enum_map! {
         HexacoreSkill::DefyingFate => 1,
-        HexacoreSkill::TempestVI => 1,
         _ => 0,
     });
     let goal: HexacoreSpec = HexacoreSpec(enum_map! {

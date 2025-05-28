@@ -34,49 +34,188 @@ pub const IED_SOURCES: &'static [u8] = &[
 ];
 /// Any IED sources that are not part of the Stats window calculation
 pub const IED_DEBUFFS: &'static [u8] = &[
-    20, // Penombre
+    20, // Tempest
 ];
+
+// lazy_static! {
+//     pub static ref BA_SPEC: HexacoreSpec = HexacoreSpec(enum_map! {
+//         HexacoreSkill::DefyingFate => 30,
+//         HexacoreSkill::TempestVI => 30,
+//         HexacoreSkill::MilleVI => 29,
+//
+//         HexacoreSkill::LuckOfTheDraw => 30,
+//         HexacoreSkill::AceInTheHole => 30,
+//         HexacoreSkill::PhantomsMark => 10,
+//         HexacoreSkill::RiftBreak => 10,
+//     });
+//
+//     /// Dummy BA
+//     pub static ref POSTNEWAGE_BA: BA = BA {
+//         columns: enum_map! {
+//             Skill::Noir => BAColumn {
+//                 contribution: 0.1139,
+//             },
+//             Skill::AceInTheHole => BAColumn {
+//                 contribution: 0.1538,
+//             },
+//             Skill::Tempest => BAColumn {
+//                 contribution: 0.1855,
+//             },
+//             Skill::LuckOfTheDraw => BAColumn {
+//                 contribution: 0.1180,
+//             },
+//             Skill::DefyingFate => BAColumn {
+//                 contribution: 0.1234,
+//             },
+//             Skill::PhantomsMark => BAColumn {
+//                 contribution: 0.0565,
+//             },
+//             Skill::Mille => BAColumn {
+//                 contribution: 0.1695,
+//             },
+//             Skill::RiftBreak => BAColumn {
+//                 contribution: 0.0449,
+//             },
+//             Skill::Finale => BAColumn {
+//                 contribution: 0.0122 + 0.0062,
+//             },
+//         },
+//     };
+// }
+
+// lazy_static! {
+//     pub static ref BA_SPEC: HexacoreSpec = HexacoreSpec(enum_map! {
+//         HexacoreSkill::DefyingFate => 18,
+//         HexacoreSkill::TempestVI => 19,
+//         HexacoreSkill::MilleVI => 0,
+//
+//         HexacoreSkill::LuckOfTheDraw => 11,
+//         HexacoreSkill::AceInTheHole => 10,
+//         HexacoreSkill::PhantomsMark => 1,
+//         HexacoreSkill::RiftBreak => 1,
+//     });
+//
+//     /// Culvert BA
+//     pub static ref POSTNEWAGE_BA: BA = BA {
+//         columns: enum_map! {
+//             Skill::Noir => BAColumn {
+//                 contribution: 0.1117,
+//             },
+//             Skill::AceInTheHole => BAColumn {
+//                 contribution: 0.1237,
+//             },
+//             Skill::Tempest => BAColumn {
+//                 contribution: 0.1496,
+//             },
+//             Skill::LuckOfTheDraw => BAColumn {
+//                 contribution: 0.1275,
+//             },
+//             Skill::DefyingFate => BAColumn {
+//                 contribution: 0.2614,
+//             },
+//             Skill::PhantomsMark => BAColumn {
+//                 contribution: 0.0638,
+//             },
+//             Skill::Mille => BAColumn {
+//                 contribution: 0.0383,
+//             },
+//             Skill::RiftBreak => BAColumn {
+//                 contribution: 0.0471,
+//             },
+//             Skill::Finale => BAColumn {
+//                 contribution: 0.0304 + 0.0052,
+//             },
+//         },
+//     };
+// }
+
+// lazy_static! {
+//     pub static ref BA_SPEC: HexacoreSpec = HexacoreSpec(enum_map! {
+//         HexacoreSkill::DefyingFate => 30,
+//         HexacoreSkill::TempestVI => 30,
+//         HexacoreSkill::MilleVI => 29,
+//
+//         HexacoreSkill::LuckOfTheDraw => 30,
+//         HexacoreSkill::AceInTheHole => 30,
+//         HexacoreSkill::PhantomsMark => 10,
+//         HexacoreSkill::RiftBreak => 10,
+//     });
+//
+//     /// Seren BA 2024-11-22 16-38-58
+//     pub static ref POSTNEWAGE_BA: BA = BA {
+//         columns: enum_map! {
+//             Skill::Noir => BAColumn {
+//                 contribution: 0.1117,
+//             },
+//             Skill::AceInTheHole => BAColumn {
+//                 contribution: 0.1713,
+//             },
+//             Skill::Tempest => BAColumn {
+//                 contribution: 0.1243,
+//             },
+//             Skill::LuckOfTheDraw => BAColumn {
+//                 contribution: 0.1787,
+//             },
+//             Skill::DefyingFate => BAColumn {
+//                 contribution: 0.1784,
+//             },
+//             Skill::PhantomsMark => BAColumn {
+//                 contribution: 0.0492,
+//             },
+//             Skill::Mille => BAColumn {
+//                 contribution: 0.1167,
+//             },
+//             Skill::RiftBreak => BAColumn {
+//                 contribution: 0.0436,
+//             },
+//             Skill::Finale => BAColumn {
+//                 contribution: 0.0091 + 0.0078,
+//             },
+//         },
+//     };
+// }
 
 lazy_static! {
     pub static ref BA_SPEC: HexacoreSpec = HexacoreSpec(enum_map! {
-        HexacoreSkill::DefyingFate => 9,
-        HexacoreSkill::TempestVI => 1,
+        HexacoreSkill::DefyingFate => 30,
+        HexacoreSkill::TempestVI => 29,
+        HexacoreSkill::MilleVI => 19,
 
-        HexacoreSkill::LuckOfTheDraw => 9,
-        HexacoreSkill::AceInTheHole => 1,
-        HexacoreSkill::PhantomsMark => 1,
-        HexacoreSkill::RiftBreak => 0,
+        HexacoreSkill::LuckOfTheDraw => 30,
+        HexacoreSkill::AceInTheHole => 26,
+        HexacoreSkill::PhantomsMark => 10,
+        HexacoreSkill::RiftBreak => 10,
     });
 
-    /// 6 burst 3 origin Extreme Seren BA.
+    /// Extreme Lotus BA
     pub static ref POSTNEWAGE_BA: BA = BA {
         columns: enum_map! {
             Skill::Noir => BAColumn {
-                contribution: 0.1392,
+                contribution: 0.1124,
             },
             Skill::AceInTheHole => BAColumn {
-                contribution: 0.1519,
+                contribution: 0.1825,
             },
             Skill::Tempest => BAColumn {
-                contribution: 0.0741,
+                contribution: 0.1463,
             },
             Skill::LuckOfTheDraw => BAColumn {
-                contribution: 0.2575,
+                contribution: 0.1526,
             },
             Skill::DefyingFate => BAColumn {
-                contribution: 0.2175,
+                contribution: 0.1605,
             },
             Skill::PhantomsMark => BAColumn {
-                contribution: 0.0569,
+                contribution: 0.0644,
             },
             Skill::Mille => BAColumn {
-                contribution: 0.0227,
+                contribution: 0.0973,
             },
             Skill::RiftBreak => BAColumn {
-                contribution: 0.0450,
+                contribution: 0.0536,
             },
             Skill::Finale => BAColumn {
-                contribution: 0.0095 + 0.0088,
+                contribution: 0.0125 + 0.0052,
             },
         },
     };

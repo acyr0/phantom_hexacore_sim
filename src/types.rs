@@ -32,6 +32,7 @@ pub struct BAColumn {
 pub enum HexacoreSkill {
     DefyingFate,
     TempestVI,
+    MilleVI,
 
     AceInTheHole,
     LuckOfTheDraw,
@@ -46,6 +47,7 @@ impl HexacoreSpec {
     pub fn valid(&self) -> bool {
         (1..=30).contains(&self.0[HexacoreSkill::DefyingFate])
             && (0..=30).contains(&self.0[HexacoreSkill::TempestVI])
+            && (0..=30).contains(&self.0[HexacoreSkill::MilleVI])
             && (0..=30).contains(&self.0[HexacoreSkill::AceInTheHole])
             && (0..=30).contains(&self.0[HexacoreSkill::LuckOfTheDraw])
             && (0..=30).contains(&self.0[HexacoreSkill::PhantomsMark])
@@ -55,6 +57,7 @@ impl HexacoreSpec {
     pub fn cost(&self) -> u16 {
         TOTAL_COST_SKILL[self.0[HexacoreSkill::DefyingFate] as usize]
             + TOTAL_COST_MASTERY[self.0[HexacoreSkill::TempestVI] as usize]
+            + TOTAL_COST_MASTERY[self.0[HexacoreSkill::MilleVI] as usize]
             + TOTAL_COST_ENHANCEMENT[self.0[HexacoreSkill::AceInTheHole] as usize]
             + TOTAL_COST_ENHANCEMENT[self.0[HexacoreSkill::LuckOfTheDraw] as usize]
             + TOTAL_COST_ENHANCEMENT[self.0[HexacoreSkill::PhantomsMark] as usize]

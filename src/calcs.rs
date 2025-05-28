@@ -31,7 +31,7 @@ fn simulate_origin(ba: &BA, old_origin: u8, cur_origin: u8, boss: f64, remaining
             return 0.0;
         }
 
-        ((3150 + level as u64 * 105) * 15 * 7 + (3600 + level as u64 * 120) * 4 * 16) as f64
+        ((390 + level as u64 * 13) * 15 * 57 + (310 + level as u64 * 11) * 15 * 50) as f64
     }
 
     let old_damage: f64 = defying_fate_damage(old_origin);
@@ -54,25 +54,39 @@ fn simulate_origin(ba: &BA, old_origin: u8, cur_origin: u8, boss: f64, remaining
     let old_breakpoint_multiplier = breakpoint_multiplier(old_origin, boss, remaining_pdr);
     let new_breakpoint_multiplier = breakpoint_multiplier(cur_origin, boss, remaining_pdr);
 
-    (new_damage / old_damage - 1.0)
-        * (new_breakpoint_multiplier / old_breakpoint_multiplier)
+    (new_damage / old_damage * new_breakpoint_multiplier / old_breakpoint_multiplier - 1.0)
         * ba.columns[Skill::DefyingFate].contribution
 }
 
 fn simulate_tempest(ba: &BA, old_mastery: u8, cur_mastery: u8) -> f64 {
-    if cur_mastery == 0 {
-        return 0.0;
-    }
-
     fn tempest_damage(level: u8) -> f64 {
-        assert!(level > 0);
-        ((480 + level as u64 * 12) * 4 * 15) as f64
+        if level == 0 {
+            // Assume that the damage before and after is relatively the same.
+            tempest_damage(1)
+        } else {
+            ((480 + level as u64 * 12) * 4 * 15) as f64
+        }
     }
 
     let old_tempest_damage: f64 = tempest_damage(old_mastery);
     let new_tempest_damage: f64 = tempest_damage(cur_mastery);
 
     (new_tempest_damage / old_tempest_damage - 1.0) * ba.columns[Skill::Tempest].contribution
+}
+
+fn simulate_mille(ba: &BA, old_mastery: u8, cur_mastery: u8) -> f64 {
+    fn mille_damage(level: u8) -> f64 {
+        if level > 0 {
+            ((300 + level as u64 * 5) * 3) as f64
+        } else {
+            (161 * 3) as f64
+        }
+    }
+
+    let old_mille_damage: f64 = mille_damage(old_mastery);
+    let new_mille_damage: f64 = mille_damage(cur_mastery);
+
+    (new_mille_damage / old_mille_damage - 1.0) * ba.columns[Skill::Mille].contribution
 }
 
 pub fn simulate_hexacores(spec: HexacoreSpec) -> f64 {
@@ -87,6 +101,11 @@ pub fn simulate_hexacores(spec: HexacoreSpec) -> f64 {
         &POSTNEWAGE_BA,
         (*BA_SPEC).0[HexacoreSkill::TempestVI],
         spec.0[HexacoreSkill::TempestVI],
+    );
+    let millevi_contrib = simulate_mille(
+        &POSTNEWAGE_BA,
+        (*BA_SPEC).0[HexacoreSkill::MilleVI],
+        spec.0[HexacoreSkill::MilleVI],
     );
 
     let lotd_fd_increase = (1.0
@@ -112,4 +131,5 @@ pub fn simulate_hexacores(spec: HexacoreSpec) -> f64 {
         + mark_fd_increase * POSTNEWAGE_BA.columns[Skill::PhantomsMark].contribution
         + defying_fate_contrib
         + tempestvi_contrib
+        + millevi_contrib
 }
